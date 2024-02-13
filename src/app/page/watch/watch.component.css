@@ -1,0 +1,125 @@
+@media screen and (min-width: 1113px) {
+    #back {
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        background-color: red;
+        background-image: linear-gradient(to right, rgb(195, 0, 255) , rgb(0, 157, 255));
+        overflow: hidden;
+    }
+    
+    #corpo{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Alinha os elementos em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+    }
+    
+    #corpo > div {
+        margin-top: 20px; /* Adiciona margem entre os elementos */
+    }
+    
+    #control{
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 40%; 
+        display: flex; 
+        justify-content: center;
+        border-radius: 6px;
+        padding: 16px 4px 16px 4px;
+        height: 135px;
+    }
+    
+    .colorpicker{
+        height: 100%; 
+        width: auto;
+    }
+    
+    p-toggleButton, p-colorPicker{
+        margin-right: 10px;
+    }
+
+    #content{
+        width: 60%;
+        align-items: stretch;
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-left: 16px;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    #back {
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        background-color: red;
+        background-image: linear-gradient(to right, rgb(195, 0, 255) , rgb(0, 157, 255));
+        overflow: hidden;
+    }
+    
+    #corpo{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Alinha os elementos em coluna */
+        justify-content: center; /* Centraliza verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+    }
+    
+    #corpo > div {
+        margin-top: 20px; /* Adiciona margem entre os elementos */
+    }
+    
+    #control{
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 90%; 
+        display: flex; 
+        justify-content: center;
+        border-radius: 6px;
+        padding: 16px 4px 16px 4px;
+        height: 135px;
+    }
+    
+    .colorpicker{
+        height: 100%; 
+        width: auto;
+    }
+    
+    p-toggleButton, p-colorPicker{
+        margin-right: 10px;
+    }
+
+    #content{
+        width: 95%;
+        align-items: stretch;
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-left: 16px;
+        padding: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<div id="back">
+    <div id="corpo">
+        <div style="height: 170px;">
+            <h1 [style]="styles">{{updateTime()}}</h1>
+        </div>
+        <div style="justify-content: right; display: block; text-align: right;" (click)="visibleChange()">
+            @if(!controlVisible){
+            <ng-icon name="bootstrapEyeFill" class="iconbrand" size="38px" color="white"></ng-icon>
+            }@else {
+            <ng-icon name="bootstrapEyeSlash" class="iconbrand" size="38px" color="white"></ng-icon>
+            }
+        </div>
+        @if(controlVisible){
+        <div id="control">
+            <div id="content">
+                <div style="margin-bottom: 26px; display: flex; align-items: center;">
+                    <p-colorPicker [(ngModel)]="color" (onChange)="returnStyle()"></p-colorPicker>
+                    <p-toggleButton [(ngModel)]="bold" onLabel="B" offLabel="B"
+                        (onChange)="returnStyle()"></p-toggleButton>
+                    <p-toggleButton [(ngModel)]="italic" onLabel="𝐼" offLabel="𝐼"
+                        (onChange)="returnStyle()"></p-toggleButton>
+                    <p-selectButton [options]="stateOptions" [(ngModel)]="watchType" optionLabel="label"
+                        optionValue="value"></p-selectButton>
+                </div>
+                <p-slider [(ngModel)]="size" [max]="isMobile ? 60 : 80" [min]="10"
+                    (onChange)="returnStyle()"></p-slider>
+                <p style="text-align: center; padding: 2px; margin: 0px; margin-top: 8px;">{{size}}px</p>
+            </div>
+        </div>
+        }@else {
+         <div style="height: 135px;">
+
+         </div>
+        }
+    </div>
+</div>
